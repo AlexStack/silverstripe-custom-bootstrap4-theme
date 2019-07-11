@@ -6,6 +6,13 @@
   display:none;
 }
 
+.top-nav .dropdown:hover .dropdown-menu {
+  display: block;
+}
+.top-nav .dropdown > .dropdown-toggle:active {
+  pointer-events: none;
+}
+
 .page-top p{
   margin-bottom: 0;
 }

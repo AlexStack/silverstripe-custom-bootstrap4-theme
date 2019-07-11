@@ -19,14 +19,26 @@
         >
             <span class="navbar-toggler-icon"></span>
         </button>
-
+ 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto ">
                 <% loop $Menu(1) %>
-                <li class="nav-item $LinkingMode">
-                    <a href="$Link" title="$Title.XML" class="nav-link"
-                        >$MenuTitle.XML</a
-                    >
+                <li class="nav-item <% if $Children %>dropdown<% end_if %> <% if $isCurrent %>active<% end_if %>">
+                    <% if $Children %>
+                    <a class="nav-link dropdown-toggle" href="$Link" id="drop{$ID}" role="button" aria-haspopup="true" aria-expanded="false" data-toggle="dropdown" >$MenuTitle.XML
+                        <span class="icon d-none d-lg-inline icon-down-arrow"></span>
+                        <span class="icon opener d-lg-none icon-down-arrow"></span>
+                        <span class="sr-only">(current)</span></a>
+                        <% if $Children %>
+                        <div class="dropdown-menu" aria-labelledby="drop{$ID}">
+                        <% loop $Children %>
+                            <a class="dropdown-item" href="$Link">$MenuTitle.XML</a>
+                        <% end_loop %>
+                        </div>
+                        <% end_if %>
+                    <% else %>
+                        <a class="nav-link" href="$Link">$MenuTitle.XML</a>
+                    <% end_if %>
                 </li>
                 <% end_loop %>
                 
@@ -67,7 +79,8 @@
             </ul>
         </div>
     </nav>
-    <div class="top-banner text-center" <% if $Top.BannerImage %>
-        style="background-image: url($Top.BannerImage.URL);" <% end_if %> >
-    </div>
+    <% if $Top.BannerImage %>
+        <div class="text-center top-banner" style="background-image: url($Top.BannerImage.URL);" >
+        </div>
+    <% end_if %>
 </header>
