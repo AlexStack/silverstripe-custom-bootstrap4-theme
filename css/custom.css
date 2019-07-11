@@ -1,0 +1,15 @@
+.top-nav{
+  padding:0;
+}
+
+.top-nav .member{
+  display:none;
+}
+
+.page-top p{
+  margin-bottom: 0;
+}
+
+.page-top-content{
+  text-align: right !important;
+}

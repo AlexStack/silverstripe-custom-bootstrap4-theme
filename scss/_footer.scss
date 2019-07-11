@@ -1,0 +1,20 @@
+footer {
+    color: $white-color !important;
+    background-color: $main-bg-color;
+    padding: 50px 0;
+
+    a {
+        text-decoration: underline;
+        color: #f3ebeb;
+
+        &:hover {
+            color: $active-color;
+        }
+    }
+
+    .copyright {
+        display: none;
+        margin: 50px 0;
+        color: #627888 !important;
+    }
+}

@@ -1,0 +1,82 @@
+body {
+    background-color: $white-color;
+    font-family: Roboto;
+    font-weight: 300;
+
+    .container {
+        max-width: 100%;
+        padding: 0;
+    }
+
+    .row {
+        margin: 0;
+    }
+}
+
+.main-content {
+    background-color: white;
+    padding-bottom: 4rem;
+
+    .heading-holder {
+        padding-top: 5rem;
+        padding-bottom: 2rem;
+        color: $gray-color;
+
+        h2 {
+            //height: 50px;
+            color: #252525;
+            font-family: Roboto;
+            font-size: 39px;
+            font-weight: 300;
+            line-height: 46px;
+
+        }
+
+        .content {
+
+            color: #616161;
+            font-family: Muli;
+            font-size: 20px;
+            font-weight: 300;
+            line-height: 30px;
+
+        }
+    }
+}
+
+a {
+    color: $nav-link-color;
+
+    &:hover {
+        color: #1E437B;
+    }
+
+    &.current {
+        color: #1E437B;
+        font-weight: bold;
+    }
+}
+
+
+
+// gallery image modal lightbox
+
+.ekko-lightbox-nav-overlay {
+    position: absolute;
+    top: 46%;
+    width: 100%;
+}
+
+.ekko-lightbox-nav-overlay a {
+    color: #cccccc;
+    font-size: 2rem;
+}
+
+.ekko-lightbox-nav-overlay a:first-child {
+    padding-left: 0.5rem;
+}
+
+.ekko-lightbox-nav-overlay a:last-child {
+    position: absolute;
+    right: 2.5rem;
+}
