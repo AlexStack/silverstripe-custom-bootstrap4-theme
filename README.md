@@ -12,6 +12,10 @@
 composer require alexstack/silverstripe-custom-bootstrap4-theme
 ``` 
 
+# Demo page
+!['demo-img-mobile'](docs/images/demo-page-mobile.png)
+!['demo-img'](docs/images/demo-page.png)
+ 
 # How to enable the theme in SilverStripe 4.x
 
 Edit your `app/_config/theme.yml` change the 'old-theme' to 'silverstripe-custom-bootstrap4-theme':
@@ -28,6 +32,7 @@ SilverStripe\View\SSViewer:
 - After install, all the .ss template files will be installed at your-ss-project/themes/silverstripe-custom-bootstrap4-theme
 - And css/javascript files will copy to your-ss-project/public/_resources/themes/silverstripe-custom-bootstrap4-theme
 - You can ignore the css/javascript files in your-ss-project/themes/silverstripe-custom-bootstrap4-theme 
+
 
 # How to set a footer for every page
 - First it will display the PageFooter in SiteConfig(settings)
