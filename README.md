@@ -112,7 +112,7 @@ SilverStripe\View\SSViewer:
 <% end_if %>
 ``` 
 
-# How to set up the logo for every page (top right)
+# How to set up the BannerImage for every page (top right)
 - It will display the BannerImage in a page
 - Silverstripe template Includes/Header.ss codes are below:
 ```php

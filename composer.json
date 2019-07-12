@@ -1,13 +1,13 @@
 {
     "name": "alexstack/silverstripe-custom-bootstrap4-theme",
-    "description": "The bootstrap 4 basic theme for SilverStripe",
+    "description": "The bootstrap 4 basic theme for SilverStripe. - Bootstrap 4.x CSS, Font Awesome 5.x, JQuery 3.x are included in the Page.ss     - Bootstrap Navbar for menu link included     - Mobile page friendly    - Very easy to custom",
     "type": "silverstripe-theme",
     "keywords": ["silverstripe", "theme"],
     "license": "BSD-3-Clause",
     "authors": [
         {
             "name": "Alex",
-            "homepage": "http://www.github.com"
+            "homepage": "https://github.com/AlexStack/silverstripe-custom-bootstrap4-theme"
         }
     ],
     "require": {
