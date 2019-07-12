@@ -8,6 +8,11 @@
             </div>
             <% end_if %>
             <div class="main-content">$Content</div>
+            <div class="main-form">
+                $Form
+                $CommentsForm
+            </div>
+
         </div>
 
     </div>
