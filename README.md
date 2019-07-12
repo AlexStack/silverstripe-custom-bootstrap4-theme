@@ -12,8 +12,10 @@
 composer require alexstack/silverstripe-custom-bootstrap4-theme
 ``` 
 
-# Demo page
+# Mobile demo page 
 !['demo-img-mobile'](docs/images/demo-page-mobile.png)
+
+# Desktop demo page 
 !['demo-img'](docs/images/demo-page.png)
  
 # How to enable the theme in SilverStripe 4.x
@@ -37,6 +39,8 @@ SilverStripe\View\SSViewer:
 # How to set a footer for every page
 - First it will display the PageFooter in SiteConfig(settings)
 - Then it will display the content of the URL Segment is "PageFooter" of a page
+- !['page-footer-min'](docs/images/page-footer-min.png)
+- Do not forget to set this page NOT Show in menus
 - Silverstripe template Includes/PageFooter.ss codes are below:
 ```php
 <!-- PageFooter Start -->
@@ -53,6 +57,8 @@ SilverStripe\View\SSViewer:
 # How to set a page top(above navbar) for every page
 - First it will display the PageTop in SiteConfig(settings)
 - Then it will display the content of the URL Segment is "PageTop" of a page
+- !['page-top-min'](docs/images/page-top-min.png)  
+- Do not forget to set this page NOT Show in menus  
 - Silverstripe template Includes/PageTop.ss codes are below:
 ```php
 <!-- PageTop Start -->
@@ -64,7 +70,7 @@ SilverStripe\View\SSViewer:
     <% end_with %>
 <% end_if %>
 <!-- PageTop End -->
-```     
+``` 
 
 # How to set up the navbar menu 
 - It will loop $Menu(1) and display links and sub-child links
@@ -125,3 +131,6 @@ SilverStripe\View\SSViewer:
 
 		SSViewer::set_theme("silverstripe-custom-bootstrap4-theme");
 		HtmlEditorConfig::get('cms')->setOption('theme_advanced_styles', 'highlight=highlight;no-border=no-border,break=break');
+
+# License
+- BSD-3-Clause
