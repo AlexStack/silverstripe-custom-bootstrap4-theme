@@ -128,6 +128,18 @@ SilverStripe\View\SSViewer:
 <% end_if %>
 ```
 
+# How to set up a different .css file other than custom.css
+- It will display the CustomCssFile in SiteConfig(settings)
+- You can easily to change it via [SilverStripe-All-in-One package](https://github.com/AlexStack/silverstripe-all-in-one#readme)
+- Silverstripe template Includes/Header.ss codes are below:
+```php
+	<!-- Custom CSS -->
+	<% if $SiteConfig.CustomCssFile != '' %>CustomCssFile
+		<% require themedCSS($SiteConfig.CustomCssFile) %>
+	<% else %>
+		<% require themedCSS('custom') %>
+    <% end_if %>
+```    
 
 # How to enable the theme in SilverStripe 3.x
 
