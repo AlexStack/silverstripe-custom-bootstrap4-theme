@@ -19,7 +19,11 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
 	<!-- Custom CSS -->
-	<% require themedCSS('custom') %>
+	<% if $SiteConfig.CustomCssFile != '' %>
+		<% require themedCSS($SiteConfig.CustomCssFile) %>
+	<% else %>
+		<% require themedCSS('custom') %>
+	<% end_if %>
 
 </head>
 <body class="$ClassName.ShortName $URLSegment <% if not $Menu(2) %> no-sidebar<% end_if %>" <% if $i18nScriptDirection %>dir="$i18nScriptDirection"<% end_if %>>

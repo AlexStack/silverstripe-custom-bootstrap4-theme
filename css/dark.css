@@ -1,6 +1,12 @@
+
+body{
+  background-color: #c0c0c0 !important;
+}
+
 .top-nav{
   padding:0 !important;
 }
+
 
 .top-nav .member{
   display:none;
